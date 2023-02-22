@@ -47,3 +47,4 @@ mvnw.cmd
 .mvn/wrapper/maven-wrapper.properties
 src/main/java/module-info.java
 src/main/resources/com/example/mensaje_app/mensaje_app/hello-view.fxml
+.idea/vcs.xml
