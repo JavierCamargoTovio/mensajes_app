@@ -13,8 +13,8 @@ public class HomeApplication {
             System.out.println(" Aplicacion de Mensajes ");
             System.out.println("1. Crear mensaje");
             System.out.println("2. listar mensaje");
-            System.out.println("3. editar mensaje");
-            System.out.println("4. Eliminar mensaje");
+            System.out.println("3. Eliminar mensaje");
+            System.out.println("4. Editar mensaje");
             System.out.println("5. Salir");
             //Leemos la opción en pantalla
             opcion = sc.nextInt();
