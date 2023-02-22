@@ -16,11 +16,31 @@ public class MensajesService {
         MensajeDAO.crearMensajeDB(mensajes);
     }
     public static void listarMensajes(){
+        MensajeDAO.leerMensaje();
     }
 
     public static void borrarMensajes(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe el id del mensaje a borrar");
+        int id = sc.nextInt();
+        MensajeDAO.borrarMensajeDB(id);
     }
 
     public static void editarMensajes(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe el id del mensaje a editar");
+        int id = Integer.parseInt(sc.nextLine());
+
+        System.out.println("Escribe tu nuevo mensaje");
+        String mensaje = sc.nextLine();
+
+        System.out.println("Escribe tu nuevo Nombre");
+        String autor = sc.nextLine();
+
+        Mensajes mensajes = new Mensajes();
+        mensajes.setId_mensaje(id);
+        mensajes.setMensaje(mensaje);
+        mensajes.setAutor_mensaje(autor);
+        MensajeDAO.actualizarMensajeDB(mensajes);
     }
 }
